@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+    
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+  
+    steps:
+      - name: Print the conetent
+        run: |
+          echo Hello, world!
+          echo Add other actions to build
+          echo test, and deploy your project.
